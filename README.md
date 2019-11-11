@@ -4,8 +4,6 @@
 
 Note: une version française est disponible plus bas dans la page
 
-
-
 # Some comments
 * As a lazy person, I first asked SMART Technologies if they can release the schematics to the DIY community. As they refused to make the schematics available, I did reverse engineering from an HD scan found on [Hackaday.io](https://hackaday.io/project/160664-smart-response-xe-reverse-engineering)
 I also used one of the terminal I own.
