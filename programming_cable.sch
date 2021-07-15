@@ -185,12 +185,6 @@ Text Label 3550 4050 3    50   ~ 0
 SCK
 Text Label 3450 4050 3    50   ~ 0
 RST
-Text Label 3650 5050 3    50   ~ 0
-VCC
-Text Label 3550 5050 3    50   ~ 0
-MOSI
-Text Label 3450 5050 3    50   ~ 0
-GND
 Wire Notes Line
 	6000 2950 6100 2950
 Wire Notes Line
@@ -335,7 +329,7 @@ Wire Wire Line
 Wire Wire Line
 	3200 2700 3200 5400
 Text Notes 5500 4700 0    50   ~ 0
-Using this adaptor and an USBASP or a STK500, one can reprogam a SMART Response terminal without opening it.\n\nAvec cet adaptateur et un USBASP ou un STK500, on peut reprogrammer un SMART Response sans l'ouvrir.
+Using this adaptor and an USBASP or a STK500, one can reprogam a SMART Response terminal without opening it.\nDepending on the connector mounted on the programming tool one will use either J1 or J2\n\nAvec cet adaptateur et un USBASP ou un STK500, on peut reprogrammer un SMART Response sans l'ouvrir.\nSuivant le connector présent sur l'outil de programmation on utilisera soit J1, soit J2.
 Wire Wire Line
 	3450 2350 3450 4400
 Wire Notes Line
@@ -378,4 +372,61 @@ Text Notes 7200 2650 1    50   ~ 0
 =
 Text Notes 7450 2650 1    50   ~ 0
 =
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J2
+U 1 1 5E4A7CFA
+P 1500 4600
+F 0 "J2" V 1504 4880 50  0000 L CNN
+F 1 "Conn_02x05_Male" V 1595 4880 50  0000 L CNN
+F 2 "" H 1500 4600 50  0001 C CNN
+F 3 "~" H 1500 4600 50  0001 C CNN
+	1    1500 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 4400 1700 4000
+Wire Wire Line
+	1500 4400 1500 4000
+Wire Wire Line
+	1400 4400 1400 4000
+Wire Wire Line
+	1300 4400 1300 4000
+Wire Wire Line
+	1700 4900 1700 5250
+Wire Wire Line
+	1600 4900 1600 5000
+Wire Wire Line
+	1600 5000 1500 5000
+Wire Wire Line
+	1500 4900 1500 5000
+Wire Wire Line
+	1500 5000 1400 5000
+Wire Wire Line
+	1400 5000 1400 4900
+Connection ~ 1500 5000
+Wire Wire Line
+	1400 5000 1300 5000
+Wire Wire Line
+	1300 5000 1300 4900
+Connection ~ 1400 5000
+Wire Wire Line
+	1400 5000 1400 5250
+Text Label 1700 4250 1    50   ~ 0
+MOSI
+Text Label 1500 4250 1    50   ~ 0
+RST
+Text Label 1400 4250 1    50   ~ 0
+SCK
+Text Label 1300 4250 1    50   ~ 0
+MISO
+Text Label 1700 5200 1    50   ~ 0
+VCC
+Text Label 1400 5200 1    50   ~ 0
+GND
+Text Label 3450 5050 3    50   ~ 0
+GND
+Text Label 3550 5050 3    50   ~ 0
+MOSI
+Text Label 3650 5050 3    50   ~ 0
+VCC
 $EndSCHEMATC
