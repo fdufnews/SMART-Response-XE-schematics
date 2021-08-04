@@ -31,11 +31,15 @@ On a second terminal, I have added the LED a little better
 I added the transistor and the 2 resistors to drive the LED
 
 Q1 MMBT2222A
+
 R34 3K resistor
+
 R14 82
+
 The LED is an SMD blue one hence the 82 ohms resistor.
 
 ![wiring](photos/buzzLED.jpg)
+
 Note don't forget to file a little notch on the side otherwise the 2 wires may be pinched when closing the case.
 
 ## SD card
@@ -114,11 +118,15 @@ Pour un second terminal j'ai amélioré le montage
 J'ai ajouté le transistor et les 2 resistances pour piloter la LED
 
 Q1 MMBT2222A
+
 R34 3K
+
 R14 82
+
 La LED est bleu d'où la résistance de 82Ohms.
 
 ![wiring](photos/buzzLED.jpg)
+
 Note ne pas oublier de limer une petite encoche sur le coté de la carte pour faire passer les fils sinon ils risquent d'être pincés lors de la fermeture du boîtier.
 
 
