@@ -35,7 +35,7 @@ R34 3K resistor
 R14 82
 The LED is an SMD blue one hence the 82 ohms resistor.
 
-![wiring](photos/buzzLED.jpg
+![wiring](photos/buzzLED.jpg)
 Note don't forget to file a little notch on the side otherwise the 2 wires may be pinched when closing the case.
 
 ## SD card
@@ -118,7 +118,7 @@ R34 3K
 R14 82
 La LED est bleu d'où la résistance de 82Ohms.
 
-![wiring](photos/buzzLED.jpg
+![wiring](photos/buzzLED.jpg)
 Note ne pas oublier de limer une petite encoche sur le coté de la carte pour faire passer les fils sinon ils risquent d'être pincés lors de la fermeture du boîtier.
 
 
