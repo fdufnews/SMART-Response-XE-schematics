@@ -24,6 +24,20 @@ There is also provision for an LED. I have added a transistor and 2 resistors.
 In order to make it easy to use, the LED can be installed on the front side of the PCB with its connexions folded on the back side. Doing this, the LED is part of the PCB but can be still be exposed through a small hole on the front cover. The case is drilled but not the plastic of the front face which is only scraped to make it transparent. The LED appears just above the SMART logo on the left side of the frontside.
 
 ![LED](photos/LED.jpg) ![LED wiring](photos/LED_wiring.jpg) ![Place LED](photos/SmartLED.jpg)
+
+## LED improvement
+On a second terminal, I have added the LED a little better
+
+I added the transistor and the 2 resistors to drive the LED
+
+Q1 MMBT2222A
+R34 3K resistor
+R14 82
+The LED is an SMD blue one hence the 82 ohms resistor.
+
+![wiring](photos/buzzLED.jpg
+Note don't forget to file a little notch on the side otherwise the 2 wires may be pinched when closing the case.
+
 ## SD card
 
 One can add an SD card to the terminal. It can be interesting if the flash already in the terminal is to small or it has been programmed too many time.
@@ -55,6 +69,22 @@ A opening was made on one side of the terminal and the card reader hot-glued in 
 
 There is no modification to the library as there are currently many libraries that manage SD card in the Arduino world
 
+## Improvement the installation of the SD card reader
+On a second terminal I have made some improvement to the installation. I first didn't install the extension connector so there was more room for the wires.
+
+I added heatshrink tubing to keep the wires in place.
+
+I added some epoxy glue to ruggedize a little. On the wires on the SDCard side, on the wires on the main board.
+
+I took some photos to show the opening where the SDcard take place in the case.
+
+
+![SDCard top](photos/SDCard_1.jpg) ![SDCard bottom](photos/SDCard_2.jpg)
+
+For the SDCard reader to take place some part of the case shall be cut. The second stiffner shall be cut too (along the red line) otherwise the wires may be cut when closing the case
+
+![SDCard case top](photos/SDCard_3.jpg) ![SDCard case side](photos/SDCard_4.jpg)
+
 ## Connecteur d\'extension
 
 Ce montage permet d\'ajouter un connecteur d\'extension qui expose les deux ports série, le connecteur ISP, le bus I2C et le port JTAG.
@@ -78,6 +108,19 @@ Il y a aussi de prévu un circuit pour raccorder une LED. J\'ai ajouté un trans
 Pour en faciliter l\'usage, la LED peut être monter sur la face avant avec ses broches repliées vers l\'arrière. En faisant ça, la LED est montée sur le circuit imprimé mais elle reste visible par l\'avant par un petit trou réalisé dans la face avant. Le boitier est percé mais non le plastique de la façade qui est seulement gratté pour le rendre transparent. La LED apparait juste au-dessus du logo SMART sur la gauche de la face avant.
 
 ![Place LED](photos/SmartLED.jpg)
+
+## Amélioration pour la LED
+Pour un second terminal j'ai amélioré le montage
+J'ai ajouté le transistor et les 2 resistances pour piloter la LED
+
+Q1 MMBT2222A
+R34 3K
+R14 82
+La LED est bleu d'où la résistance de 82Ohms.
+
+![wiring](photos/buzzLED.jpg
+Note ne pas oublier de limer une petite encoche sur le coté de la carte pour faire passer les fils sinon ils risquent d'être pincés lors de la fermeture du boîtier.
+
 
 ## SD card
 
@@ -109,3 +152,20 @@ Une ouverture a été ménagée sur un côté du boîtier et le lecteur de carte
 ![card reader](photos/cardreader.jpg)
 
 Il n'y a aucune modification de la librairie car il existe déjà plusieurs librairies de gestion de carte SD dans le monde Arduino
+
+## Amélioration de l'installation du lecteur de SD card
+Srigidiur un second terminal, j'ai amélioré le montage du lecteur de carte. J'ai d'abord fait le choix de ne pas installer le connecteur d'extension ce qui a donné plus de place pour le câblage.
+
+J'ai utilisé te la gaine thermoretractable pour tenir les fils en place.
+
+J'ai ajouté de la colle Epoxy pour durcir l'ensemble. Sur les fils à l'arrière du lecteur de carte, et sur la carte principale.
+
+J'ai pris des photos pour montrer les aménagements dans le boîtier.
+
+
+![SDCard top](photos/SDCard_1.jpg) ![SDCard bottom](photos/SDCard_2.jpg)
+
+Pour placer le lecteur de carte certaines parties du boîtier doivent être coupées. Le second renfort doit être coupé aussi (selon la ligne rouge) sinon les fils peuvent être abîmés lors de la fermeture du boîtier.
+
+![SDCard case top](photos/SDCard_3.jpg) ![SDCard case side](photos/SDCard_4.jpg)
+
