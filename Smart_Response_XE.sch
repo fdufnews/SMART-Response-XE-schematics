@@ -14,7 +14,7 @@ Comment3 "This schematic is probably not 100% accurate. Decoupling capacitors ar
 Comment4 "Smart Response XE Terminal Reverse Engineering"
 $EndDescr
 $Comp
-L MyDevices:ATmega128RFA1 U3
+L srxe:ATmega128RFA1-MyDevices U3
 U 1 1 5DB731A8
 P 5100 1800
 F 0 "U3" H 5050 1865 50  0000 C CNN
@@ -897,7 +897,7 @@ F 3 "http://cdn.macom.com/datasheets/masw-007221.pdf" H 1800 2300 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L MyDevices:2450FB15L0001 B1
+L srxe:2450FB15L0001-MyDevices B1
 U 1 2 5DBAEC6F
 P 3100 1900
 F 0 "B1" H 3150 1965 50  0000 C CNN
@@ -1539,7 +1539,7 @@ Wire Wire Line
 	6950 3950 8000 3950
 Connection ~ 8000 3950
 $Comp
-L MyDevices:SW_push_small SW1
+L srxe:SW_push_small-MyDevices SW1
 U 1 1 5E5ED506
 P 7550 3100
 F 0 "SW1" H 7678 2896 50  0000 L CNN
