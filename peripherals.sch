@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
 Title "SMART Response XE - Peripherals"
-Date "2021-09-08"
+Date "2021-09-09"
 Rev ""
 Comp ""
 Comment1 ""
@@ -112,7 +112,7 @@ F 3 "" H 4200 2600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1550 2950 2150 2950
+	1650 2950 2150 2950
 Wire Wire Line
 	2150 3650 2050 3650
 Wire Wire Line
@@ -126,7 +126,7 @@ P 1700 1800
 AR Path="/6143FF32" Ref="C?"  Part="1" 
 AR Path="/61400672/6143FF32" Ref="C30"  Part="1" 
 F 0 "C30" H 1815 1846 50  0000 L CNN
-F 1 "C*" H 1815 1755 50  0000 L CNN
+F 1 "C" H 1815 1755 50  0000 L CNN
 F 2 "" H 1738 1650 50  0001 C CNN
 F 3 "~" H 1700 1800 50  0001 C CNN
 	1    1700 1800
@@ -265,36 +265,6 @@ F 3 "" H 2950 4050 50  0001 C CNN
 	1    2950 4050
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 614D1534
-P 1450 3200
-AR Path="/614D1534" Ref="R?"  Part="1" 
-AR Path="/61400672/614D1534" Ref="R21"  Part="1" 
-F 0 "R21" V 1350 3100 50  0000 L CNN
-F 1 "0" V 1350 3300 50  0000 L CNN
-F 2 "" H 1450 3200 50  0001 C CNN
-F 3 "~" H 1450 3200 50  0001 C CNN
-	1    1450 3200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 614D153A
-P 1450 2950
-AR Path="/614D153A" Ref="R?"  Part="1" 
-AR Path="/61400672/614D153A" Ref="R28"  Part="1" 
-F 0 "R28" V 1550 2850 50  0000 L CNN
-F 1 "0" V 1550 3050 50  0000 L CNN
-F 2 "" H 1450 2950 50  0001 C CNN
-F 3 "~" H 1450 2950 50  0001 C CNN
-	1    1450 2950
-	0    1    -1   0   
-$EndComp
-Text HLabel 1250 3200 0    50   Input ~ 0
-RX
-Text HLabel 1250 2950 0    50   Input ~ 0
-TX
 $Comp
 L Device:R_Small R?
 U 1 1 6143FF48
@@ -794,14 +764,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 61A6B179
-P 5950 6650
+P 5950 6950
 AR Path="/61A6B179" Ref="#PWR?"  Part="1" 
 AR Path="/61400672/61A6B179" Ref="#PWR0135"  Part="1" 
-F 0 "#PWR0135" H 5950 6400 50  0001 C CNN
-F 1 "GND" H 5800 6600 50  0001 C CNN
-F 2 "" H 5950 6650 50  0001 C CNN
-F 3 "" H 5950 6650 50  0001 C CNN
-	1    5950 6650
+F 0 "#PWR0135" H 5950 6700 50  0001 C CNN
+F 1 "GND" H 5800 6900 50  0001 C CNN
+F 2 "" H 5950 6950 50  0001 C CNN
+F 3 "" H 5950 6950 50  0001 C CNN
+	1    5950 6950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -842,11 +812,7 @@ Wire Wire Line
 Wire Wire Line
 	1600 3650 1600 3600
 Wire Wire Line
-	1350 3200 1250 3200
-Wire Wire Line
-	1250 2950 1350 2950
-Wire Wire Line
-	1550 3200 2050 3200
+	1650 3200 2050 3200
 Wire Wire Line
 	2050 3200 2050 3350
 Wire Wire Line
@@ -1134,4 +1100,102 @@ F 3 "" H 10550 5250 50  0001 C CNN
 	1    10550 5250
 	1    0    0    -1  
 $EndComp
+$Comp
+L Jumper:Jumper_2_Bridged R28
+U 1 1 642D53D1
+P 1450 2950
+F 0 "R28" H 1450 3053 50  0000 C CNN
+F 1 "Jumper_2_Bridged" H 1450 3054 50  0001 C CNN
+F 2 "" H 1450 2950 50  0001 C CNN
+F 3 "~" H 1450 2950 50  0001 C CNN
+	1    1450 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_2_Bridged R21
+U 1 1 642D5E0D
+P 1450 3200
+F 0 "R21" H 1450 3303 50  0000 C CNN
+F 1 "Jumper_2_Bridged" H 1450 3304 50  0001 C CNN
+F 2 "" H 1450 3200 50  0001 C CNN
+F 3 "~" H 1450 3200 50  0001 C CNN
+	1    1450 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 2950 1250 2950
+Wire Wire Line
+	1250 3200 1150 3200
+Text HLabel 1150 2950 0    50   Input ~ 0
+TX
+Text HLabel 1150 3200 0    50   Input ~ 0
+RX
+$Comp
+L Device:C C3
+U 1 1 642EE53F
+P 4700 1800
+F 0 "C3" H 4815 1846 50  0000 L CNN
+F 1 "C" H 4815 1755 50  0000 L CNN
+F 2 "" H 4738 1650 50  0001 C CNN
+F 3 "~" H 4700 1800 50  0001 C CNN
+	1    4700 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 642EF942
+P 4700 1950
+F 0 "#PWR04" H 4700 1700 50  0001 C CNN
+F 1 "GND" H 4705 1777 50  0000 C CNN
+F 2 "" H 4700 1950 50  0001 C CNN
+F 3 "" H 4700 1950 50  0001 C CNN
+	1    4700 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR03
+U 1 1 642EFF1C
+P 4700 1650
+F 0 "#PWR03" H 4700 1500 50  0001 C CNN
+F 1 "+3.3V" H 4715 1823 50  0000 C CNN
+F 2 "" H 4700 1650 50  0001 C CNN
+F 3 "" H 4700 1650 50  0001 C CNN
+	1    4700 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR05
+U 1 1 642FD893
+P 6350 6850
+F 0 "#PWR05" H 6350 6700 50  0001 C CNN
+F 1 "+3.3V" H 6365 7023 50  0000 C CNN
+F 2 "" H 6350 6850 50  0001 C CNN
+F 3 "" H 6350 6850 50  0001 C CNN
+	1    6350 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C15
+U 1 1 642FBEA6
+P 6150 6900
+F 0 "C15" V 5921 6900 50  0000 C CNN
+F 1 "C" V 6012 6900 50  0000 C CNN
+F 2 "" H 6150 6900 50  0001 C CNN
+F 3 "~" H 6150 6900 50  0001 C CNN
+	1    6150 6900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 6650 5950 6900
+Wire Wire Line
+	5950 6900 6050 6900
+Connection ~ 5950 6900
+Wire Wire Line
+	5950 6900 5950 6950
+Wire Wire Line
+	6250 6900 6350 6900
+Wire Wire Line
+	6350 6900 6350 6850
+Text Notes 8400 6150 0    50   ~ 0
+Despite missing R6, SDA is still pulled to\n+3.3V through R41 (COL1) by about 30k Ohm.
 $EndSCHEMATC

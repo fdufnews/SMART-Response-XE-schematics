@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
 Title "SMART Response XE - Keyboard"
-Date "2019-11-03"
+Date "2021-09-09"
 Rev "1.0"
 Comp ""
 Comment1 "Le schéma n'est probablement pas exact à 100%. Condensateurs de découplage absents"
@@ -1327,7 +1327,7 @@ L Device:D_Zener_x2_ACom_KAK Z5
 U 1 1 5EACF49F
 P 4100 6350
 F 0 "Z5" H 4100 6566 50  0000 C CNN
-F 1 "D_Zener_x2_ACom_KAK" H 4100 6475 50  0000 C CNN
+F 1 "D_Zener_x2_ACom_KAK*" H 4100 6475 50  0000 C CNN
 F 2 "" H 4100 6350 50  0001 C CNN
 F 3 "~" H 4100 6350 50  0001 C CNN
 	1    4100 6350
@@ -1338,7 +1338,7 @@ L Device:D_Zener_x2_ACom_KAK Z6
 U 1 1 5EACF4A9
 P 4100 7050
 F 0 "Z6" H 4100 7266 50  0000 C CNN
-F 1 "D_Zener_x2_ACom_KAK" H 4100 7175 50  0000 C CNN
+F 1 "D_Zener_x2_ACom_KAK*" H 4100 7175 50  0000 C CNN
 F 2 "" H 4100 7050 50  0001 C CNN
 F 3 "~" H 4100 7050 50  0001 C CNN
 	1    4100 7050
@@ -1349,7 +1349,7 @@ L Device:D_Zener_x2_ACom_KAK Z7
 U 1 1 5EACF4B3
 P 5400 6350
 F 0 "Z7" H 5400 6566 50  0000 C CNN
-F 1 "D_Zener_x2_ACom_KAK" H 5400 6475 50  0000 C CNN
+F 1 "D_Zener_x2_ACom_KAK*" H 5400 6475 50  0000 C CNN
 F 2 "" H 5400 6350 50  0001 C CNN
 F 3 "~" H 5400 6350 50  0001 C CNN
 	1    5400 6350
@@ -1360,7 +1360,7 @@ L Device:D_Zener_x2_ACom_KAK Z8
 U 1 1 5EACF4BD
 P 5400 7050
 F 0 "Z8" H 5400 7266 50  0000 C CNN
-F 1 "D_Zener_x2_ACom_KAK" H 5400 7175 50  0000 C CNN
+F 1 "D_Zener_x2_ACom_KAK*" H 5400 7175 50  0000 C CNN
 F 2 "" H 5400 7050 50  0001 C CNN
 F 3 "~" H 5400 7050 50  0001 C CNN
 	1    5400 7050
@@ -1512,4 +1512,128 @@ Wire Wire Line
 	3100 5150 3100 5200
 Text Notes 3700 1150 0    50   ~ 0
 Enter key is routed but has no dome so there is no physical enter key\nLa touche enter est routée mais le dome est absent donc il n'y a pas de touche enter physique
+$Comp
+L Device:R_Small R26
+U 1 1 6409FC0F
+P 8600 2450
+F 0 "R26" V 8404 2450 50  0000 C CNN
+F 1 "47k" V 8495 2450 50  0000 C CNN
+F 2 "" H 8600 2450 50  0001 C CNN
+F 3 "~" H 8600 2450 50  0001 C CNN
+	1    8600 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR02
+U 1 1 640A0FFB
+P 8850 1800
+F 0 "#PWR02" H 8850 1650 50  0001 C CNN
+F 1 "+3.3V" H 8865 1973 50  0000 C CNN
+F 2 "" H 8850 1800 50  0001 C CNN
+F 3 "" H 8850 1800 50  0001 C CNN
+	1    8850 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R27
+U 1 1 64155AD6
+P 8600 1950
+F 0 "R27" V 8404 1950 50  0000 C CNN
+F 1 "47k" V 8495 1950 50  0000 C CNN
+F 2 "" H 8600 1950 50  0001 C CNN
+F 3 "~" H 8600 1950 50  0001 C CNN
+	1    8600 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8050 1950 8500 1950
+Connection ~ 8050 1950
+Wire Wire Line
+	8700 1950 8850 1950
+Wire Wire Line
+	8850 1950 8850 1800
+$Comp
+L Device:R_Small R25
+U 1 1 6418A062
+P 8600 2950
+F 0 "R25" V 8404 2950 50  0000 C CNN
+F 1 "47k" V 8495 2950 50  0000 C CNN
+F 2 "" H 8600 2950 50  0001 C CNN
+F 3 "~" H 8600 2950 50  0001 C CNN
+	1    8600 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R24
+U 1 1 6419B3AB
+P 8600 3450
+F 0 "R24" V 8404 3450 50  0000 C CNN
+F 1 "47k" V 8495 3450 50  0000 C CNN
+F 2 "" H 8600 3450 50  0001 C CNN
+F 3 "~" H 8600 3450 50  0001 C CNN
+	1    8600 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R23
+U 1 1 641AC6D4
+P 8600 3950
+F 0 "R23" V 8404 3950 50  0000 C CNN
+F 1 "47k" V 8495 3950 50  0000 C CNN
+F 2 "" H 8600 3950 50  0001 C CNN
+F 3 "~" H 8600 3950 50  0001 C CNN
+	1    8600 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R22
+U 1 1 641BD9A5
+P 8600 4450
+F 0 "R22" V 8404 4450 50  0000 C CNN
+F 1 "47k" V 8495 4450 50  0000 C CNN
+F 2 "" H 8600 4450 50  0001 C CNN
+F 3 "~" H 8600 4450 50  0001 C CNN
+	1    8600 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8050 2450 8500 2450
+Connection ~ 8050 2450
+Wire Wire Line
+	8050 2950 8500 2950
+Connection ~ 8050 2950
+Wire Wire Line
+	8050 3450 8500 3450
+Connection ~ 8050 3450
+Wire Wire Line
+	8050 3950 8500 3950
+Connection ~ 8050 3950
+Wire Wire Line
+	8050 4450 8500 4450
+Connection ~ 8050 4450
+Wire Wire Line
+	8700 4450 8850 4450
+Wire Wire Line
+	8850 4450 8850 3950
+Connection ~ 8850 1950
+Wire Wire Line
+	8700 2450 8850 2450
+Connection ~ 8850 2450
+Wire Wire Line
+	8850 2450 8850 1950
+Wire Wire Line
+	8700 2950 8850 2950
+Connection ~ 8850 2950
+Wire Wire Line
+	8850 2950 8850 2450
+Wire Wire Line
+	8700 3450 8850 3450
+Connection ~ 8850 3450
+Wire Wire Line
+	8850 3450 8850 2950
+Wire Wire Line
+	8700 3950 8850 3950
+Connection ~ 8850 3950
+Wire Wire Line
+	8850 3950 8850 3450
 $EndSCHEMATC
