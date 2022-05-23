@@ -1198,4 +1198,6 @@ Wire Wire Line
 	6350 6900 6350 6850
 Text Notes 8400 6150 0    50   ~ 0
 Despite missing R6, SDA is still pulled to\n+3.3V through R41 (COL1) by about 30k Ohm.
+Text Notes 7950 2950 0    50   ~ 0
+BEWARE : On the PCB,  drain and source of Q1 are swapped
 $EndSCHEMATC

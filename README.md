@@ -34,7 +34,8 @@ The schematic seems somewhat convoluted but it allows several configurations.
 ### Direct drive with I/O
 Mounting R39 0 Ohm, a small piezo buzzer and R10 100 Ohms you have the cheaper version. R10 can be modified to get a more or less loud sound 
 ### Transistor buffered and speaker
-Mounting Q1 and R9 you can use a small speaker.
+Mounting Q1 and R9 you can use a small speaker.  
+BEWARE that on the PCB drain and source of Q1 are swapped.
 
 ----
 
@@ -68,5 +69,6 @@ Le schéma semble un peu tordu mais il permet plusieurs configurations.
 ### Pilotage direct par un I/O
 On monte R39 0 Ohm, un petit buzzer piezo et R10 100 Ohms pour la version économique. La valeur de R10 peut être modifiée pour adapter le niveau sonore.
 ### Transistor + haut-parleur
-En montant Q1 et R9, on peut utiliser un petit haut-parleur.
+En montant Q1 et R9, on peut utiliser un petit haut-parleur.  
+ATTENTION sur le circuit imprimé, drain et source de Q1 sont échangés.
 
